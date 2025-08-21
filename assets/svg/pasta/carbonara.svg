@@ -1,0 +1,10 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'>
+<rect width='100%' height='100%' fill='#fffaf3'/>
+<circle cx='300' cy='200' r='140' fill='#e6d2b5'/>
+<g stroke='#8b6f47' stroke-width='6' fill='none'>
+  <path d='M150,210 C250,260 350,140 450,190' />
+  <path d='M160,170 C260,220 340,240 440,150' />
+  <path d='M170,230 C260,180 340,300 430,220' />
+</g>
+<text x='50%' y='92%' text-anchor='middle' font-family='Verdana' font-size='28' fill='#8b6f47'>Spaghetti Carbonara</text>
+</svg>

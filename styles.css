@@ -1,0 +1,60 @@
+:root{
+  --cream:#fffaf3;
+  --brown:#8b6f47;
+  --tan:#e6d2b5;
+  --ink:#2b2b2b;
+  --muted:#9a9a9a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Inter,Arial}
+img{display:block;max-width:100%}
+.site-header{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:#fff;border-bottom:1px solid #eee;backdrop-filter:saturate(180%) blur(6px)}
+.brand{display:flex;align-items:center;gap:10px}
+.brand h1{margin:0;font-size:20px;color:var(--brown)}
+.brand small{color:var(--muted)}
+.logo{font-size:22px}
+.actions .btn{margin-left:8px}
+.hero{overflow:hidden}
+.hero-slides{display:flex;animation:slideHero 24s infinite ease-in-out}
+.hero-slide{min-width:100%;position:relative}
+.hero-slide .caption{position:absolute;left:10%;bottom:10%;background:rgba(255,255,255,.7);padding:10px 14px;border-radius:12px;color:var(--brown)}
+@keyframes slideHero{0%{transform:translateX(0)}30%{transform:translateX(0)}33%{transform:translateX(-100%)}63%{transform:translateX(-100%)}66%{transform:translateX(-200%)}96%{transform:translateX(-200%)}100%{transform:translateX(0)}}
+.container{padding:28px 16px;max-width:1100px;margin:0 auto}
+.section-title{margin:0 0 16px;color:var(--brown)}
+.carousel{position:relative;background:#fff;border:1px solid #eee;border-radius:14px;padding:14px;overflow:hidden}
+.track{display:flex;gap:14px;transition:transform .4s ease}
+.nav{position:absolute;top:50%;transform:translateY(-50%);background:var(--brown);color:#fff;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer}
+.prev{left:10px}.next{right:10px}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--tan);background:#fff;color:var(--brown);padding:6px 10px;border-radius:999px;cursor:pointer}
+.chip.active, .chip:hover{background:var(--tan)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #eee;border-radius:14px;padding:14px;box-shadow:0 6px 22px rgba(139,111,71,.08)}
+.product .title{margin:8px 0 6px;color:var(--brown)}
+.price{color:#3a3a3a;font-weight:600}
+.btn{background:var(--brown);color:#fff;border:none;border-radius:10px;padding:10px 14px;cursor:pointer;transition:transform .06s ease;box-shadow:0 6px 16px rgba(139,111,71,.18)}
+.btn:hover{transform:translateY(-1px)}
+.btn.outline{background:#fff;border:1px solid var(--tan);color:var(--brown)}
+.btn.full{width:100%}
+.two-col{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:800px){.two-col{grid-template-columns:1fr 1fr}}
+.testi-list{list-style:none;margin:0 0 14px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.testi-list li{background:#fff;border:1px solid #eee;border-radius:12px;padding:12px}
+.testi-list cite{display:block;color:var(--muted);margin-top:6px}
+.site-footer{padding:20px;text-align:center;color:var(--muted)}
+.cart{position:fixed;top:0;right:-420px;width:360px;max-width:90vw;height:100vh;background:#fff;border-left:1px solid #eee;box-shadow:-8px 0 28px rgba(0,0,0,.1);transition:right .3s ease;z-index:60;display:flex;flex-direction:column}
+.cart.open{right:0}
+.cart-header{display:flex;justify-content:space-between;align-items:center;padding:14px;border-bottom:1px solid #eee}
+.cart-items{list-style:none;margin:0;padding:12px;flex:1;overflow:auto;display:flex;flex-direction:column;gap:10px}
+.cart-items li{display:flex;gap:10px;align-items:center}
+.cart-items img{width:56px;height:56px;object-fit:cover;border-radius:10px;border:1px solid #eee}
+.cart-footer{border-top:1px solid #eee;padding:14px}
+.icon{background:#fff;border:1px solid #eee;border-radius:8px;padding:6px 10px;cursor:pointer}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);opacity:0;visibility:hidden;transition:opacity .3s ease;z-index:55}
+.overlay.show{opacity:1;visibility:visible}
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:70;background:rgba(0,0,0,.35)}
+.modal .modal-content{background:#fff;border-radius:14px;max-width:520px;width:92%;padding:18px;border:1px solid #eee}
+.modal.show{display:flex}
+.close{float:right}
+input,textarea,select{width:100%;padding:10px;border:1px solid #e5e5e5;border-radius:10px;margin:6px 0 12px;background:#fff}
