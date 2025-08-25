@@ -1,5 +1,5 @@
 const PRODUCTS = [
-  {id:1, title:'Spaghetti Carbonara', cat:'carbonara', price:42000, img:'assets/svg/pasta/carbonara.svg', top:true},
+  {id:1, title:'Spaghetti Carbonara', cat:'carbonara', price:42000, img:'', top:true},
   {id:2, title:'Spaghetti Bolognese', cat:'bolognese', price:40000, img:'assets/svg/pasta/bolognese.svg', top:true},
   {id:3, title:'Aglio Olio', cat:'aglioolio', price:38000, img:'assets/svg/pasta/aglioolio.svg', top:true},
   {id:4, title:'Pesto', cat:'pesto', price:45000, img:'assets/svg/pasta/pesto.svg', top:true},
